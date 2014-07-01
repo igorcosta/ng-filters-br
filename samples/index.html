@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Testing Brasil Filters</title>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/cpf.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/cnpj.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/cep.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/telsp.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/realbrasileiro.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+	<h3>Filtros valores reais brasileiros</h3>
+ 	<p ng-repeat="value in moedas">{{value | realbrasileiro}}</p>
+ 	<h3>Filtros para CPF</h3>
+ 	<p ng-repeat="value in cpfs">{{value |cpf}}</p>
+ 	<h3>Filtros para CNPJ</h3>
+ 	<p ng-repeat="value in cnpjs">{{value |cnpj}}</p>
+  	<h3>Filtros para CEP</h3>
+ 	<p ng-repeat="value in ceps_br">{{value |cep}}</p>
+  	<h3>Filtros para Telefones SP</h3>
+ 	<p ng-repeat="value in tels_sp">{{value |telefone_sp}}</p>
+</body>
+</html>

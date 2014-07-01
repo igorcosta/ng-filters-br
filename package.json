@@ -1,0 +1,44 @@
+{
+  "author": {
+    "name": "Igor Costa",
+    "email": "igorcosta@riacycle.com",
+    "url": "https://github.com/igorcosta"
+  },
+  "name": "ng-filters-br",
+  "description": "A collection of filters for Brazilian standards",
+  "version": "1.1.0",
+  "homepage": "https://github.com/igorcosta/ng-filters-br",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/igorcosta/ng-filters-br.git"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "filter"
+  ],
+  "bugs": {
+    "url": "https://github.com/igorcosta/ng-filters-br/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache License 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">= 0.10.15"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-karma": "~0.6.2",
+    "matchdep": "~0.3.0",
+    "grunt-ngmin": "0.0.3"
+  }
+}
