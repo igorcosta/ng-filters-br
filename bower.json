@@ -19,6 +19,13 @@
   "ignore": [
     "**/.*",
     "node_modules",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md",
     "bower_components",
     "test",
     "tests"
