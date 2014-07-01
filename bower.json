@@ -17,7 +17,6 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
     "node_modules",
     ".gitignore",
     ".jshintignore",
