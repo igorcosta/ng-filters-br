@@ -16,21 +16,6 @@ module.exports = function(grunt) {
     dev: {
       reporters: 'dots'
     },
-    karma : {
-      options: {
-        configFile: 'karma.conf.js',
-        singleRun: true
-      },
-      travis: {
-        browsers: ['PhantomJS']
-      },
-      local: {
-        browsers: ['Chrome']
-      },
-      dev: {
-        singleRun: false
-      }
-    },
     jshint: {
       options: {
         jshintrc: '.jshintrc'
