@@ -5,16 +5,24 @@ Filtros dos padrões Brasileiros para quem usa o Angular e seus filtros.
 
 ### Instalando via bower
 
-* bower install ng-filters-br *
+```bash
+$ bower install ng-filters-br
+```
 
 
 Depois de executar só colocar dentro dos módulos de sua aplicação:
 
-* var app = angular.module('myApp', ['ngSanitize','brasil.filters']); *
+```javascript
+var app = angular.module('myApp', ['ngSanitize','brasil.filters']);
+```
 
 ### Aplicando o filtro de formatação quando necessário
 
-É só colocar o * {{value | nome do filtro}} *
+É só colocar:
+
+```html
+{{value | nome do filtro}}
+````
 
 Exemplo abaixo:
 ```html
@@ -38,3 +46,21 @@ Vai de sua escolha.
 
 Sugestões,  reclamações. Só fazer um fork, criar pull-requests ou abrir uma issue caso você não
 consiga fazer um pull-request.
+
+
+## Licença
+
+```
+  Copyright 2014 Francesco Pontillo
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
