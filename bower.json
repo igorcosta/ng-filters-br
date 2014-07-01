@@ -6,7 +6,7 @@
     "igorcosta <igorcosta@riacycle.com>"
   ],
   "description": "filtros para formatacao de dados brasileiros",
-  "main": "./dist/ng-filters-br.js",
+  "main": "dist/ng-filters-br.min.js",
   "moduleType": [
     "globals"
   ],
@@ -17,17 +17,17 @@
   ],
   "license": "MIT",
   "ignore": [
-    "node_modules",
-    ".gitignore",
-    ".jshintignore",
-    ".jshintrc",
-    "bower.json",
-    "gruntfile.js",
-    "package.json",
-    "README.md",
-    "bower_components",
-    "test",
-    "tests"
+        "src",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "karma.conf.js",
+        "bower.json",
+        "Gruntfile.js",
+        "package.json",
+        "README.md"
   ],
   "dependencies": {
     "angular": "~1.2.19"
