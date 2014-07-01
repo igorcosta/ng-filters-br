@@ -5,16 +5,16 @@ Filtros dos padrões Brasileiros para quem usa o Angular e seus filtros.
 
 ### Instalando via bower
 
-* bower install ng-filters-br
+* bower install ng-filters-br *
 
 
 Depois de executar só colocar dentro dos módulos de sua aplicação:
 
-* var app = angular.module('myApp', ['ngSanitize','brasil.filters']);
+* var app = angular.module('myApp', ['ngSanitize','brasil.filters']); *
 
 ### Aplicando o filtro de formatação quando necessário
 
-É só colocar o * {{value | nome do filtro}}
+É só colocar o * {{value | nome do filtro}} *
 
 Exemplo abaixo:
 ```html
