@@ -35,7 +35,7 @@ Exemplo abaixo:
   	<h3>Filtros para CEP</h3>
  	<p ng-repeat="value in ceps_br">{{value |cep}}</p>
   	<h3>Filtros para Telefones SP</h3>
- 	<p ng-repeat="value in tels_sp">{{value |telefone_sp}}</p>
+ 	<p ng-repeat="value in tels_sp">{{value |tel}}</p>
 ```
 
 
