@@ -51,7 +51,7 @@ consiga fazer um pull-request.
 ## Licença
 
 ```
-  Copyright 2014 Francesco Pontillo
+  Copyright 2014 Igor Costa
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
