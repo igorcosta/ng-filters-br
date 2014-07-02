@@ -1,6 +1,6 @@
 /**
  * A collection of filters for Brazilian standards
- * @version v1.1.0 - 2014-07-01
+ * @version v1.1.0 - 2014-07-02
  * @author Igor Costa
  * @link https://github.com/igorcosta/ng-filters-br
  * @license Apache License 2.0
@@ -76,12 +76,16 @@ angular.module('brasil.filters').filter('realbrasileiro', function () {
     return 'R$ ' + formatReal(input);
   };
 });
-// Source: dist/.temp/brasil/filters/telsp.js
-angular.module('brasil.filters').filter('telefone_sp', function () {
+// Source: dist/.temp/brasil/filters/tel.js
+angular.module('brasil.filters').filter('tel', function () {
   return function (input) {
     var str = input + '';
     str = str.replace(/\D/g, '');
-    str = str.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+    if (str.length === 11) {
+      str = str.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+    } else {
+      str = str.replace(/^(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+    }
     return str;
   };
 });
