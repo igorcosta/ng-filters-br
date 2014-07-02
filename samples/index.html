@@ -9,20 +9,20 @@
 	<script type="text/javascript" src="../src/brasil/filters/cpf.js"></script>
 	<script type="text/javascript" src="../src/brasil/filters/cnpj.js"></script>
 	<script type="text/javascript" src="../src/brasil/filters/cep.js"></script>
-	<script type="text/javascript" src="../src/brasil/filters/telsp.js"></script>
-	<script type="text/javascript" src="../src/brasil/filters/realbrasileiro.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/phonesp.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/brazillianreal.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
 <body ng-controller="MainCtrl">
 	<h3>Filtros valores reais brasileiros</h3>
- 	<p ng-repeat="value in moedas">{{value | realbrasileiro}}</p>
+ 	<p ng-repeat="value in amounts">{{ value | brazillian_real }}</p>
  	<h3>Filtros para CPF</h3>
- 	<p ng-repeat="value in cpfs">{{value |cpf}}</p>
+ 	<p ng-repeat="value in cpfs">{{ value | cpf }}</p>
  	<h3>Filtros para CNPJ</h3>
- 	<p ng-repeat="value in cnpjs">{{value |cnpj}}</p>
+ 	<p ng-repeat="value in cnpjs">{{ value | cnpj }}</p>
   	<h3>Filtros para CEP</h3>
- 	<p ng-repeat="value in ceps_br">{{value |cep}}</p>
+ 	<p ng-repeat="value in ceps">{{ value | cep }}</p>
   	<h3>Filtros para Telefones SP</h3>
- 	<p ng-repeat="value in tels_sp">{{value |telefone_sp}}</p>
+ 	<p ng-repeat="value in phones">{{ value | phone_sp }}</p>
 </body>
 </html>
