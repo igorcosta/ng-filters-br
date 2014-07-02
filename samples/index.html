@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="../src/brasil/filters/cpf.js"></script>
 	<script type="text/javascript" src="../src/brasil/filters/cnpj.js"></script>
 	<script type="text/javascript" src="../src/brasil/filters/cep.js"></script>
-	<script type="text/javascript" src="../src/brasil/filters/telsp.js"></script>
+	<script type="text/javascript" src="../src/brasil/filters/tel.js"></script>
 	<script type="text/javascript" src="../src/brasil/filters/realbrasileiro.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
@@ -22,7 +22,7 @@
  	<p ng-repeat="value in cnpjs">{{value |cnpj}}</p>
   	<h3>Filtros para CEP</h3>
  	<p ng-repeat="value in ceps_br">{{value |cep}}</p>
-  	<h3>Filtros para Telefones SP</h3>
- 	<p ng-repeat="value in tels_sp">{{value |telefone_sp}}</p>
+  	<h3>Filtros para Telefones SP e Brasil</h3>
+ 	<p ng-repeat="value in tels">{{value |tel}}</p>
 </body>
 </html>
