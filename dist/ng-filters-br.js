@@ -1,12 +1,14 @@
 /**
  * A collection of filters for Brazilian standards
- * @version v1.1.0 - 2014-07-02
+ * @version v1.1.0 - 2014-09-29
  * @author Igor Costa
  * @link https://github.com/igorcosta/ng-filters-br
  * @license Apache License 2.0
 **/
 
 'use strict';
+// Source: dist/.temp/brasil/filters/app.js
+angular.module('brasil.filters', []);
 // Source: dist/.temp/brasil/filters/cep.js
 angular.module('brasil.filters').filter('cep', function () {
   return function (input) {
@@ -42,7 +44,7 @@ angular.module('brasil.filters', []).filter('cpf', function () {
 });
 // Source: dist/.temp/brasil/filters/realbrasileiro.js
 function formatReal(int) {
-  var tmp = int + '';
+  var tmp = int.toString().indexOf('.') !== -1 ? int + '' : int + '.00';
   var res = tmp.replace('.', '');
   tmp = res.replace(',', '');
   var neg = false;
