@@ -81,8 +81,16 @@ module.exports = function(grunt) {
         src: ['<%= yeoman.dist %>/<%= pkg.name %>.js'],
         dest: '<%= yeoman.dist %>/<%= pkg.name %>.min.js'
       }
+    },
+    karma: {
+      unit: {
+        configFile: 'test/karma.conf.js',
+        autoWatch: false,
+        singleRun: true
+      }
     }
   });
+  grunt.registerTask('test', ['karma:unit']);
   grunt.registerTask('build', ['clean', 'ngmin', 'concat', 'uglify', 'clean:temp']);
 
 };

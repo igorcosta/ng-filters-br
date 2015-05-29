@@ -30,7 +30,7 @@ function formatReal( int ){
   }
   return (neg ? '-'+tmp : tmp);
 }
-angular.module('brasil.filters').filter('realbrasileiro', function() {
+angular.module('brasil.filters', []).filter('realbrasileiro', function() {
   return function(input) {
     return 'R$ ' + formatReal(input);
   };
