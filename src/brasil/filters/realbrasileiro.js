@@ -1,7 +1,7 @@
 'use strict';
 
 function formatReal( int ){
-  var tmp = int+'';
+  var tmp = int.toString().indexOf('.') !== -1 ? int + '' : int + '.00';
   var res = tmp.replace('.','');
   tmp = res.replace(',','');
   var neg = false;
