@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('brasil.filters',[]).filter('cpf', function() {
+angular.module('brasil.filters').filter('cpf', function() {
   return function(input) {
   	var str = input+ '';
   	str = str.replace(/\D/g,'');
